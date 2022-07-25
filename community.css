@@ -1,0 +1,116 @@
+.user {
+    font-weight: bold;
+    color: black;
+}
+
+.time {
+    color: gray;
+}
+
+.userComment {
+    color: #000;
+}
+
+.replies .comment {
+    margin-top: 30px;
+}
+
+
+
+
+
+
+.info {
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 75px;
+    padding: 0px 0px 50px;
+    overflow: hidden;
+    margin: 0 30px 62px 50px;
+    border-radius: 25px;
+}
+
+.info2 {
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 75px;
+    padding: 0px 0px 50px;
+    overflow: hidden;
+    margin: 0 30px 62px;
+    border-radius: 25px;
+}
+
+.info3 {
+    float: left;
+    width: 300px;
+    height: 400px;
+    margin-bottom: 75px;
+    overflow: hidden;
+    padding: 0px 0px 50px;
+    margin: 0 30px 62px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 1200px) {
+.info {
+    margin: 0px 120px 62px;
+
+}
+.info3 {
+    margin: 0px 0px 62px 345px;
+}
+
+@media screen and (max-width: 1000px) {
+.info {
+    margin: 0px 35px 62px;
+
+}
+.info2 {
+    margin: 0px 20px 62px;
+
+}
+.info3 {
+    margin: 0px 0px 62px 215px;
+}
+
+@media screen and (max-width: 768px) {
+.info {
+    margin: 0px 130px 62px;
+
+}
+.info2 {
+    margin: 0px 130px 62px;
+
+}
+.info3 {
+    margin: 0px 130px 62px;
+}
+
+@media screen and (max-width: 568px) {
+.info {
+    width: 70%;
+    margin: 0px 50px 62px;
+
+}
+.info2 {
+    width: 70%;
+    margin: 0px 50px 62px;
+}
+.info3 {
+    width: 70%;
+    margin: 0px 50px 62px;
+}
+
+div.info {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.info2 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+div.info3 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

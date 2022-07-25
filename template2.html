@@ -1,0 +1,327 @@
+<?php 
+  session_start();
+  if(!isset($_SESSION["userid"])) {
+    header("location: sign-in.php");
+    exit(); 
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="tab.css" rel="stylesheet">
+    <link rel="stylesheet" href="accordion.css" type="text/css" />
+    <style type="text/css">
+      .img2{
+        display: none;
+      }
+    </style>
+</head>
+<body>
+
+<header class="header">
+  <div class="tab">
+    <img class="logo" src="hack gcses logo.png" alt="logo" width="242px" height="50px" >
+                <a href="logout.inc.php"><button class="hide">Logout</button></a>
+                <button class="hide">Contact</button>
+                <a href="comingsoon.php"><button>Notes</button>
+                <button class="hide">Definitions</button>
+                <a href="biology.php"><button class="hide2">Biology</button></a>
+            </div>
+        </header>
+
+<h1 style="font-size: 46px;">Conservation</h1>
+
+<nav class="navigation">
+  <ul class="accordion">
+  <?php
+  $accordians = array(
+    ''  =>  array(
+      1 =>  '',
+      2 =>  '',  
+      3 =>  '',    
+    ),
+    'Define sustainable development.' =>  array(
+      1 =>  'development providing for the needs of an increasing human population',
+      2 =>  'without harming the environment'
+    ),
+    'Explain what sustainable development requires.'  => array(
+      1 =>  'management of conflicting demands',
+      2 =>  'planning and co-operation at local, national and international levels'
+    ),
+    'Outline how sewage is treated to make the water that it contains  safe to return to the environment or for human use.'  => array(
+      1 =>  'polluted water is piped to sewage treatment',
+      2 =>  'screening → removal of large pieces of waste',
+      3 =>  'coagulation to separate suspended particles',
+      4 =>  'settling of grit in the grit settlement tanks',
+      5 =>  'digestion by bacteria',
+      6 =>  'with aeration tank',
+      7 =>  'sludge treated with anaerobic decomposers → anaerobic digestion',
+      8 =>  'water treated with chlorine',
+      9 =>  'distillation/collection of water through evaporation'
+    ),
+    'Explain the roles of bacteria in the aerobic digestion tank in sewage treatment.'  => array(
+      1 =>  'secrete enzymes',
+      2 =>  'breakdown insoluble substances to soluble substances',
+      3 =>  '(give examples) protease breaks down protein to amino acids, etc.',
+    ),
+  );
+  ?>
+  </ul>
+  <article>
+    <!-- <ul class="accordion">
+            4 =>  '<img src="HG 21-2/21-2-1.png" alt="image" width="100%">'
+            
+      <li class="accordion__item">
+        <a href="javascript:void(0);" class="accordion__link">Explain the roles of bacteria in the aerobic digestion tank in sewage treatment.</a>
+        <ul class="sub-accordion">
+        <ul>
+          <li class="sub-accordion__item">secrete enzymes</li>
+          <li class="sub-accordion__item">breakdown insoluble substances to soluble substances</li>
+          <li class="sub-accordion__item">(give examples) protease breaks down protein to amino acids, etc.</li>
+        </ul>
+        </ul>
+        <div class="ranker">
+          <button></button>
+        </div>
+      </li><li class="accordion__item">
+        <a href="javascript:void(0);" class="accordion__link">Describe the negative consequences of letting untreated sewage flow into lake ecosystems.</a>
+        <ul class="sub-accordion">
+        <ul>
+          <li class="sub-accordion__item">eutrophication</li>
+          <li class="sub-accordion__item">aquatic plants die → cannot photosynthesize due to blocked light</li>
+          <li class="sub-accordion__item">decreased pH kills aquatic organisms</li>
+          <li class="sub-accordion__item">oxygen concentration decreases due to bacteria and decomposers → populations of animals decrease</li>
+          <li class="sub-accordion__item">disrupts food chains</li>
+          <li class="sub-accordion__item">more mosquitoes</li>
+          <li class="sub-accordion__item">toxicity and mutations caused by heavy metals</li>
+          <li class="sub-accordion__item">female contraceptive hormones cause feminization of aquatic organisms and reduced sperm count</li>
+        </ul>
+        </ul>
+        <div class="ranker">
+          <button></button>
+        </div>
+      </li><li class="accordion__item">
+        <a href="javascript:void(0);" class="accordion__link">Outline how paper can be recycled.</a>
+        <ul class="sub-accordion">
+        <ul>
+          <li class="sub-accordion__item">paper is collected and sent to recycling center</li>
+          <li class="sub-accordion__item">shredding</li>
+          <li class="sub-accordion__item">pulping</li>
+          <li class="sub-accordion__item">soaking with water</li>
+          <li class="sub-accordion__item">de-inking</li>
+          <li class="sub-accordion__item">bleached</li>
+          <li class="sub-accordion__item">rolled, and flattened</li>
+        </ul>
+        </ul>
+        <div class="ranker">
+          <button></button>
+        </div>
+      </li><li class="accordion__item">
+        <a href="javascript:void(0);" class="accordion__link">Outline the possible benefits of conserving a habitat.</a>
+        <ul class="sub-accordion">
+        <ul>
+          <li class="sub-accordion__item">prevents extinction</li>
+          <li class="sub-accordion__item">maintains genetic diversity</li>
+          <li class="sub-accordion__item">maintaining habitat</li>
+          <li class="sub-accordion__item">nutrient recycling</li>
+          <li class="sub-accordion__item">maintain food webs</li>
+          <li class="sub-accordion__item">prevent soil erosion</li>
+        </ul>
+        </ul>
+        <div class="ranker">
+          <button></button>
+        </div>
+      </li><li class="accordion__item">
+        <a href="javascript:void(0);" class="accordion__link">State some resources which natural ecosystems provide for humans.</a>
+        <ul class="sub-accordion">
+        <ul>
+          <li class="sub-accordion__item">food</li>
+          <li class="sub-accordion__item">medicine</li>
+          <li class="sub-accordion__item">fuel</li>
+          <li class="sub-accordion__item">water, oxygen</li>
+          <li class="sub-accordion__item">mineral</li>
+        </ul>
+        </ul>
+        <div class="ranker">
+          <button></button>
+        </div>
+      </li><li class="accordion__item">
+        <a href="javascript:void(0);" class="accordion__link">Describe ways in which endangered species can be conserved. </a>
+        <ul class="sub-accordion">
+        <ul>
+          <li class="sub-accordion__item">reducing pollution</li>
+          <li class="sub-accordion__item">monitor populations</li>
+          <li class="sub-accordion__item">protect habitat</li>
+          <li class="sub-accordion__item">removal of alien species</li>
+          <li class="sub-accordion__item">prevent hunting</li>
+          <li class="sub-accordion__item">create reserves and exclusion zones</li>
+          <li class="sub-accordion__item">international agreements to limit trade</li>
+          <li class="sub-accordion__item">captive breeding</li>
+        </ul>
+        </ul>
+        <div class="ranker">
+          <button></button>
+        </div>
+      </li><li class="accordion__item">
+        <a href="javascript:void(0);" class="accordion__link">Suggest why replanted forests and plantations are less useful for conservation than the natural forest.</a>
+        <ul class="sub-accordion">
+        <ul>
+          <li class="sub-accordion__item">planted forest is most likely a monoculture</li>
+          <li class="sub-accordion__item">so there is a loss of biodiversity</li>
+          <li class="sub-accordion__item">(negative effects of monoculture)</li>
+        </ul>
+        </ul>
+        <div class="ranker">
+          <button></button>
+        </div>
+      </li>
+      <li class="accordion__item">
+        <a href="javascript:void(0);" class="accordion__link">Past-Paper Question 1</a>
+        <ul class="sub-accordion">
+          <li class="sub-accordion__item"><img src="HG 21-2/21-2-1.png" alt="image" width="100%" onclick="this.src='HG 21-2/21-2-3.png'">
+          </li>
+          <li class="sub-accordion__item"><img src="HG 21-2/21-2-2.png" alt="image" width="100%" onclick="this.src='HG 21-2/21-2-4.png'">
+          </li>
+          <li class="sub-accordion__item"><i>from: 0610/42/O/N/16</i></li>
+        </ul>
+        <div class="ranker">
+          <button></button>
+        </div>
+      </li>
+      <li class="accordion__item">
+        <a href="javascript:void(0);" class="accordion__link">Past-Paper Question 2</a>
+        <ul class="sub-accordion">
+          <li class="sub-accordion__item">
+            <img src="HG 21-2/21-2-5.png" alt="image" width="100%" class="img1">
+            <img src="HG 21-2/21-2-6.png" alt="image" width="100%" class="img2">
+          </li>
+          <li class="sub-accordion__item">
+            <img src="HG 21-2/21-2 X.png" alt="image" width="100%" class="img1">
+            <img src="HG 21-2/21-2-7.png" alt="image" width="100%" class="img2">
+          </li>
+          <li class="sub-accordion__item"><i>from: 0610/43/O/N/19</i></li>
+        </ul>
+        <div class="ranker">
+          <button></button>
+        </div>
+      </li>
+      <li class="accordion__item">
+        <a href="javascript:void(0);" class="accordion__link">Past-Paper Question 3</a>
+        <ul class="sub-accordion">
+          <li class="sub-accordion__item">
+            <img src="HG 21-2/21-2-8.png" alt="image" width="100%" class="img1">
+            <img src="HG 21-2/21-2-9.png" alt="image" width="100%" class="img2">
+          </li>
+          <li class="sub-accordion__item">
+            <img src="HG 21-2/21-2 XX.png" alt="image" width="100%" class="img1">
+            <img src="HG 21-2/21-2-10.png" alt="image" width="100%" class="img2">
+          </li>
+          <li class="sub-accordion__item"><i>from: 0610/43/M/J/17</i></li>
+        </ul>
+        <div class="ranker">
+          <button></button>
+        </div>
+      </li>
+      <li class="accordion__item">
+        <a href="javascript:void(0);" class="accordion__link">Past-Paper Question 4</a>
+        <ul class="sub-accordion">
+          <li class="sub-accordion__item"><img src="HG 21-2/21-2-11.png" alt="image" width="100%">
+          </li>
+          <li class="sub-accordion__item">
+            <img src="HG 21-2/21-2-12.png" alt="image" width="100%" class="img1">
+            <img src="HG 21-2/21-2-13.png" alt="image" width="100%" class="img2">
+          </li>
+          <li class="sub-accordion__item"><i>from: 0610/41/O/N/19</i></li>
+        </ul>
+        <div class="ranker">
+          <button></button>
+        </div>
+      </li>
+    </ul> -->
+    <ul class="accordion">
+    <?php
+      ini_set('display_errors', 1);
+      ini_set('display_startup_errors', 1);
+      error_reporting(0);
+      require_once 'dbh.inc.php';
+      require_once 'functions.inc.php';
+      $result = getUserColors($conn,$_SESSION['userid']);
+      // echo "<pre>";
+      // print_r($result);
+      // exit;
+      $result_que = array();
+      $result_color = array();
+      while($row = mysqli_fetch_assoc($result)){
+          $result_que[] = $row['question'];
+          $result_color[] = $row['color'];
+      }
+      $data = '';
+      foreach ($accordians as $key => $accordian) {
+          $data .='<li class="accordion__item">
+              <a href="javascript:void(0);" class="accordion__link">'.$key.'</a>';
+              $data .= '<ul class="sub-accordion">';
+                $data .= '<ul>';
+                foreach ($accordian as $key_1 => $value_1) {
+                    $data .= '<li class="sub-accordion__item">'.$value_1.'</li>';
+                }
+                $data .= '</ul>
+                        </ul>';
+                $color ='';
+                if(in_array($key,$result_que)){
+                  $result_color = getUserSelectedColors($conn,$_SESSION['userid'],$key);
+                  $color = $result_color['color'];
+                }
+                $data .= '<div class="ranker">
+                            <button class="color-change" data-key="'.$key.'" style="background:'.$color.'"></button>
+                          </div>';
+          $data .='</li>';
+      }
+
+      // foreach ($accordians as $key => $accordian) {
+      //   $data .='<li class="accordion__item">
+      //           <a href="javascript:void(0);" class="accordion__link">'.$key.'</a>';
+      //           $data .= '<ul class="sub-accordion">';
+      //             $data .= '<ul>';
+      //             foreach ($accordian as $key_1 => $value_1) {
+      //                 $data .= '<li class="sub-accordion__item">'.$value_1.'</li>';
+      //             }
+      //             $data .= '</ul>
+      //                     </ul>';
+      //             $color ='';
+      //             $data .= '<div class="ranker">
+      //                         <button class="color-change" data-key="'.$key.'" style="background:'.$color.'"></button>
+      //                       </div>';
+      //   $data .='</li>';
+      // }
+      echo $data;
+    ?>
+    </ul>
+  </article>
+</nav>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="accordion.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.accordion__link').on('click',function(){
+      var x = $(this).position();
+      var pos = x.top-100;
+        $('html, body').animate({
+          scrollTop: pos
+        }, 800, function(){
+        });
+    });
+    $('.img1').on('click',function(){
+      $(this).hide();
+      $('.img2').show();
+    })
+    $('.img2').on('click',function(){
+      $(this).hide();
+      $('.img1').show();
+    });
+  });
+</script>
+</body>
+</html> 
+

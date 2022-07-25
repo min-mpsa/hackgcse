@@ -1,0 +1,220 @@
+
+
+
+.home_page {
+    background: #393532 url(background2.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    min-height: 100vh;
+    box-shadow: inset 0 0 0 2000px rgba(156, 102, 21, 0.3);
+}
+
+
+
+.home_page_text {
+    margin: 0 auto 50px;
+    padding: 175px 15px 0px 15px;
+    text-align: center;
+}
+.clearFix { 
+  content: "";
+  display: block; 
+  clear: both;
+}
+.home_page h1 {
+    color: #ffd892;
+    font-family: "Architects Daughter";
+    margin: 0 auto 50px;
+    background: url("logo-final.png") no-repeat center left;
+    background-size: 55px 62px;
+    padding-left: 87px;
+    font-size: 48px;
+    display: inline-block;
+}
+
+.home_page_text h2,
+.home_page_text h3,
+.home_page_text h4 {
+    text-transform: uppercase;
+    font-family: "Permanent Marker";
+    color: #cdd1de;
+    margin: 0 0 50px;
+    font-weight: normal;
+}
+.home_page_text h2 {
+    font-size: 40px;
+}
+.home_page_text h3 {
+    font-size: 32px;
+}
+.home_page_text h4 {
+    font-size: 25px;
+}
+.home_page_links {
+    overflow: auto;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 20px;
+}
+.home_page_link_button {
+    width: 280px;
+    height: 78px;
+    margin: 40px 65px;
+    background-color: #2b8243;
+    border-radius: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    font-size: 33px;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-family: "Permanent Marker";
+    color: #cdd1de;
+    opacity: 0.7;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 75px;
+    display: inline-block;
+    transition: all 0.2s ease-in-out;
+
+}
+.home_page_links .link_button1 {
+    margin-left: 0px!important;
+}
+.home_page_links .link_button3 {
+    margin-right: 0px!important;
+}
+
+.home_page_link_button:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transform: translateY(-3px);
+}
+.home_page_link_button a {
+    text-decoration: none;
+    color: #cdd1de;
+    display: block;
+}
+
+
+
+
+/* Media Quries for Different smaller breakpoints*/
+
+@media screen and (max-width: 1200px) {
+    .home_page_link_button {
+        margin: 20px 30px;
+    }
+
+}
+
+@media screen and (max-width: 1030px) {
+    .home_page .home_page_text {
+        padding-top: 130px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .home_page .home_page_link_button {
+        margin: 20px;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .home_page .home_page_link_button {
+        margin: 20px 15px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .home_page .home_page_text {
+        padding-top: 120px;
+    }
+    .home_page_text h2 {
+        font-size: 34px;
+    }
+    .home_page_text h3 {
+        font-size: 26px;
+    }
+    .home_page_text h4 {
+        font-size: 25px;
+    }
+    .home_page .home_page_link_button {
+        width: 220px;
+    }
+
+}
+
+@media screen and (max-width: 730px) {
+    .home_page .home_page_text {
+        padding-top: 60px;
+    }
+    .home_page_text h1 {
+        font-size: 50px;
+        background-size: 50px 50px;
+        padding-left: 75px;
+    }
+    .home_page_text h2 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .home_page_text h3 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+    .home_page_text h4 {
+        font-size: 20px;
+    }
+    .home_page .home_page_link_button {
+        width: 185px;
+    }
+     .home_page_link_button {
+        font-size: 25px;
+        line-height: 55px;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+}
+
+@media screen and (max-width: 635px) {
+    .home_page .home_page_link_button {
+        float: none;
+        width: 85%;
+        margin: 0px auto 15px; 
+        text-align: center;
+        vertical-align: middle;   
+    }
+    .home_page_links {
+        padding-bottom: 0px;
+    }
+}
+
+@media screen and (max-width: 476px) {
+    .home_page_text h1 {
+        font-size: 40px;
+        background-size: 40px 40px;
+        padding-left: 60px;
+    }
+    .home_page_text h2{
+        font-size: 20px;
+        line-height: 34px;
+    }
+    .home_page_text h4 {
+        font-size: 20px;
+    }
+    .home_page_text h3 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media screen and (max-width: 340px) {
+    .home_page_text h1 {
+        font-size: 36px;
+        background-size: 35px 35px;
+        padding-left: 53px;
+    }
+}
+
+

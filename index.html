@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter&display=swap" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Permanent+Marker:400' rel='stylesheet' type='text/css'>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" type="image/png" href="logo-final.png">
+    <title>Hack GCSE</title>
+    
+    <style>
+    
+       
+        
+        html, body {
+            height: 100%;
+        }
+
+
+        .info {
+    width: 270px;
+    height: 360px;
+    margin-bottom: 75px;
+    padding: 0px 0px 50px;
+    overflow: hidden;
+    margin: 50px 30px 62px 50px;
+    border-radius: 25px;
+    background-color: #f7f7f7;
+}
+
+.info2 {
+    width: 270px;
+    height: 360px;
+    margin-bottom: 75px;
+    padding: 0px 0px 50px;
+    overflow: hidden;
+    margin: 50px 50px 62px;
+    border-radius: 25px;
+    background-color: #f7f7f7;
+}
+
+.info3 {
+    width: 270px;
+    height: 360px;
+    margin-bottom: 75px;
+    overflow: hidden;
+    padding: 0px 0px 50px;
+    margin: 50px 30px 62px 30px;
+    border-radius: 25px;
+    background-color: #f7f7f7;
+
+}
+    .features {
+        margin-left: 12.08%;
+        scroll-behavior: smooth;
+        
+    }
+
+    .featuretitle {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+        font-family: 'Architects Daughter';
+        color: #413620;
+    }
+
+    .allforfree {
+        margin-top: 20px;
+        margin-bottom: 85px;
+        text-align: center;
+        font-family: 'Architects Daughter';
+        color: #413620;
+    }
+
+    .featureimage {
+        width: 50%;
+        margin-top: 22%;
+        margin-left: 21%;
+    }
+
+    @font-face {
+    font-family: Lato-Regular;
+    src: url('../fonts/Lato/Lato-Regular.ttf'); 
+  }
+
+    .featuredivtext {
+        margin-top: 10%;
+        font-family: Lato-Regular;
+    font-size: 24px;
+    padding: 15px;
+    color: #808080;
+    line-height: 1.4;
+    text-align: center;
+    }
+
+    .footer {
+        background: #413620;
+        color: #f7f7f7;
+        height: 400px;
+        flex-direction: row;
+        scroll-behavior: smooth;
+    }
+
+    .footer .footer-content {
+        height: 350px;
+        display: flex;
+    }
+
+    .footer .footer-content .footer-section1{
+        width: 20%;
+        height: 100%;
+        padding: 10px;
+    }
+
+ 
+
+    .footer .footer-content .footer-section2{
+        width: 45%;
+        height: 100%;
+        padding: 15px;
+    }
+
+    .footer .footer-content .footer-section2-mobile {
+        display: none;
+        padding: 15px;
+        width: 100%;
+        position: relative;
+         
+
+    }
+
+   
+
+    .footer .footer-content .footer-section3{
+        width: 35%;
+        height: 100%;
+        padding: 25px;
+    }
+
+    .footer .footer-bottom {
+        background: #1f150f; 
+        color: #f7f7f7;
+        height: 50px;
+        width: 100%;
+        text-align: center;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        padding-top: 12px;
+    }
+
+    .purposeimg {
+        width: 100%;
+        padding-top: 25px;
+        border-radius: 50%;
+    }
+    
+    .fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 0px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.featuretext {
+    display: inline-block;
+    font-family: Lato-Regular;
+    font-size: 20px;
+    padding: 15px;
+    color: #f7f7f7;
+    line-height: 1.4;
+}
+
+.featureemail {
+    font-family: Lato-Regular;
+    font-size: 20px;
+    color: #f7f7f7;
+    line-height: 1.4;
+}
+
+
+    @media screen and (max-width: 1260px) {
+    .info {
+        margin: 50px 0px 62px 0px;
+
+    }
+
+    .info2 {
+        margin: 50px 00px 62px 0px;
+
+    }
+
+    .info3 {
+        margin: 50px 0px 62px 0px;
+
+    }
+
+    .features {
+        margin-left: 130px;
+        
+    }
+    .featuretext {
+    font-size: 16px;
+    padding: 10px;
+}
+
+.featureemail {
+    font-size: 16px;
+    padding: 10px;
+}
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0px 0px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+
+}
+    @media screen and (max-width: 940px) {
+    .info {
+        width: 225px;
+        height: 300px;
+    }
+
+    .info2 {
+        width: 225px;
+        height: 300px;
+    }
+
+    .info3 {
+        width: 225px;
+        height: 300px;
+    }
+
+    .features {
+        margin-left: 150px;
+    }
+
+    .featuredivtext {
+        
+    font-size: 20px;
+    
+    }
+
+    .footer .footer-content .footer-section1{
+        display: none;
+    }
+
+    .purposeimg {
+        display: none;
+    }
+
+    .footer .footer-content .footer-section2{
+        width: 50%;
+    }
+
+    .footer .footer-content .footer-section3{
+        width: 50%;
+    }
+
+    
+
+    .footer {
+        height: 350px;
+    }
+
+    .footer .footer-content {
+        height: 300px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+    
+}
+    @media screen and (max-width: 800px) {
+    .info {
+        width: 225px;
+        height: 300px;
+    }
+
+    .info2 {
+        width: 225px;
+        height: 300px;
+    }
+
+    .info3 {
+        width: 225px;
+        height: 300px;
+    }
+
+    .features {
+        margin-left: 60px;
+    }
+
+    .featuredivtext {
+        
+        font-size: 18px;
+        
+        }
+    
+}
+
+@media screen and (max-width: 660px) {
+
+   
+    .footer .footer-content .footer-section2{
+       display: none;
+    }
+
+    .footer .footer-content .footer-section3{
+        display: none;
+    }
+
+    .footer {
+        height: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .footer .footer-content .footer-section2-mobile {
+        display: inline;
+        width: 100%;
+        height: 100%;
+    }
+
+    h2 {
+        margin-bottom: 30px;
+    }
+    
+    
+
+
+}
+
+    @media screen and (max-width: 490px) {
+        .features {
+        margin-left: 0px;
+        
+    }
+
+    .info {
+        width: 300px;
+        margin: auto;
+        height: 400px;
+        margin-bottom: 30px;
+    }
+
+    .info2 {
+        width: 300px;
+        margin: auto;
+        height: 400px;
+        margin-bottom: 30px;
+
+    }
+
+    .info3 {
+        width: 300px;
+        margin: auto;
+        height: 400px;
+        margin-bottom: 30px;
+
+    }
+    .featuredivtext {
+        
+        font-size: 24px;
+        
+        }
+    
+}
+    
+    
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-87BTE3GYG2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-87BTE3GYG2');
+</script>
+</head>
+<body style="background-color:#cdd1de;">
+    <section style="min-height: 100%;" class="home_page">
+
+        <div class="home_page_text">
+            <h1>Hack GCSE</h1>
+            <h2>The All-In-One IGCSE Revision Site</h2>
+            <h4>_____________________</h4>
+            <h3>Finish Your Studies As Quickly As Possible</h3>
+        </div>
+
+        <div class="clearFix"></div>
+
+        <div class="home_page_links">
+            <div class="home_page_link_button link_button1">
+                <a href="#contact"> Contact </a>
+            </div>
+            <div class="home_page_link_button link_button2">
+                <a href="sign-in.php" target="_blank"> Start </a>
+            </div>
+            <div class="home_page_link_button link_button3">
+                <a href="#features"> Features </a>
+            </div>
+        </div>
+    </section>
+
+    <div class="featuretitle">
+        <h1 style="font-weight:1000;">Features</h1>
+        </div>
+    
+    <section style="min-height: 100%;" id="features" class="features">
+        
+        <div class="row">
+            <div class="info" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    ">          
+                <img src="f1.png" class="featureimage">
+                <p class="featuredivtext">All Past-Papers Dissected</p>
+            </div>
+            <div class="info2" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    ">
+    <img src="f2.png" class="featureimage">
+    <p class="featuredivtext">Every single possible question for every topic</p>
+            </div>
+            <div class="info3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    ">  <img src="f3.png" class="featureimage">
+                <p class="featuredivtext">100% Mark-Scheme Accurate Answers</p>
+            </div>
+            <div class="info" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    "><img src="f4.png" class="featureimage">
+                <p class="featuredivtext">Mark the difficulty of each question</p>
+            </div>
+            <div class="info2" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    "><img src="f5.png" class="featureimage">
+                <p class="featuredivtext">Get the average difficulty of each chapter</p>
+            </div>
+            <div class="info3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    "><img src="f6.png" class="featureimage">
+                <p class="featuredivtext textfix">Last-revised date automatically saved</p>
+            </div>
+            <div class="info" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    "><img src="f7.png" class="featureimage">
+                <p class="featuredivtext">Review hard chapters until all chapters become easy</p>
+            </div>
+            <div class="info2" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    "><img src="f8.png" class="featureimage">
+                <p class="featuredivtext">Ask any questions. Connect with people.</p>
+            </div>
+            <div class="info3" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    "><img src="f9.png" class="featureimage">
+                <p class="featuredivtext">Subjects included: Bio, Chem, Phy</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="allforfree">
+        <h1 style="font-weight:1000;">ALL FOR FREE !</h1>
+        </div>
+   
+    <div id="contact" class="footer ">
+        <div style="min-height: 100%;" class="footer-content">
+            <div class="footer-section1">
+                <img src="purpose.png" class="purposeimg">
+            </div>
+            <div class="footer-section2">
+            <p style="color:#f7f7f7;"class="featuredivtext"><i>The purpose of this website is to make your revision as efficient as possible so you free up time to learn more about the world around you and discover where your passion lies.</i></p><p style="text-align: center;">________________________________</p></div>
+            <div class="footer-section3">
+                <h2 style="text-align: center;font-family: 'Permanent Marker';">Contact</h2>
+                <a href="https://www.facebook.com/Hack-GCSE-100463108673856" target="_blank" class="fa fa-facebook"></a><p class="featuretext">Like our Facebook page</p><br>
+                <a href="https://www.youtube.com/channel/UCRon4Aoacufhl_eD5mC18Yw" target="_blank" class="fa fa-youtube"></a><p class="featuretext">Subscribe to our YouTube channel</p><br>
+                <a href="https://www.instagram.com/hackgcse/" target="_blank" class="fa fa-instagram"></a><p class="featuretext">Follow us on Instagram</p><br>
+                <p style="padding-left: 5px;padding-top: 3px;" class="featureemail">Email: hackgcses@gmail.com</p>
+            </div>
+            <div class="footer-section2-mobile">
+                <p style="color:#f7f7f7;"class="featuredivtext"><i>The purpose of this website is to make your revision as efficient as possible so you free up time to learn more about the world around you and discover where your passion lies.</i></p><p style="text-align: center;">________________________________</p></div>
+                <div class="footer-section2-mobile">
+                    <h2 style="text-align: center;font-family: 'Permanent Marker';">Contact</h2>
+                    <a href="https://www.facebook.com/Hack-GCSE-100463108673856" target="_blank" class="fa fa-facebook"></a><p class="featuretext">Like our Facebook page</p><br>
+                    <a href="https://www.youtube.com/channel/UCRon4Aoacufhl_eD5mC18Yw" target="_blank" class="fa fa-youtube"></a><p class="featuretext">Subscribe to our YouTube channel</p><br>
+                    <a href="https://www.instagram.com/hackgcse/" target="_blank" class="fa fa-instagram"></a><p class="featuretext">Follow us on Instagram</p><br>
+                    <p style="padding-left: 5px;padding-top: 3px;" class="featureemail">Email: hackgcses@gmail.com</p>
+                </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; Copyright <b>Hack GCSE</b> | All Rights Reserved
+            
+        </div>
+
+    </div>
+  
+
+</body>
+</html> 

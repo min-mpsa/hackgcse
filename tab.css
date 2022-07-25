@@ -1,0 +1,90 @@
+body {
+    font-family: Arial;
+    background-color: #cdd1de;
+}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #000000;
+  background-color: #413620;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: right;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 19px 21px;
+  transition: 0.3s;
+  font-size: 18px;
+  line-height: 18px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  color: #ffd791;
+  border: 1px solid #ccc;
+  border-top: none;
+}
+
+button {
+    color: #ffd791;
+    font-family: 'Architects Daughter', Arial;
+}
+
+h1 {
+    font-family: 'Architects Daughter', Arial;
+    font-size: 50px;
+    color: #9c6615;
+    -webkit-text-stroke-width: 0.001px;
+    -webkit-text-stroke-color: black;
+    padding-left: 2%;
+    text-align: left;
+    padding-bottom: 15px;
+}
+.logo {
+  padding-left: 7px;
+  padding-top: 3px;
+}
+
+
+/* Media Quries for Small Devices */
+
+@media screen and (max-width: 830px) {
+  .logo{
+    display: none;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .hide {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 350px) {
+  .hide2 {
+    display: none;
+  }
+}
+
